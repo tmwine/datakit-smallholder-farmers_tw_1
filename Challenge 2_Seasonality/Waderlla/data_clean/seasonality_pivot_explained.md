@@ -16,7 +16,7 @@ The pivot table was created from the cleaned dataset `proc_challenge_2_seasonali
   - `topic_category`
   - `topic_type`
 
-Data for the year **2017** was excluded during preparation because it did not contain a full set of observations.
+Data for the years **2017** and **2022** was excluded during preparation because it did not contain a full set of observations.
 
 ---
 
