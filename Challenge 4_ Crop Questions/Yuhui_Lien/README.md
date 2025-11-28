@@ -299,14 +299,21 @@ To better capture the specialized depth of conversation within each topic, **TF-
 
 
 ### 3.3 Weighted Scoring and Gap Calculation
+
 The model calculates a final weighted score for Supply and determines the Mismatch Gap:
 
-* **Average Demand Complexity**
-$$\text{Average\_Demand\_Complexity} = (\text{Normalized Question Length} \times \text{WEIGHT\_COUNT}) + (\text{Semantic Demand Score} \times \text{WEIGHT\_SEMANTIC})$$
-* **Average Supply Detail**
-$$\text{Average\_Supply\_Detail} = (\text{Normalized Answer Length} \times \text{WEIGHT\_COUNT}) + (\text{Semantic Supply Score} \times \text{WEIGHT\_SEMANTIC})$$
-* **Knowledge Gap Score**
-$$\text{Knowledge\_Gap\_Score} = \text{Average\_Demand\_Complexity} - \text{Average\_Supply\_Detail}$$
+**Average Demand Complexity**
+
+$Average\_Demand\_Complexity = (Normalized\ Question\ Length \times WEIGHT\_COUNT) + (Semantic\ Demand\ Score \times WEIGHT\_SEMANTIC)$
+
+**Average Supply Detail**
+
+$Average\_Supply\_Detail = (Normalized\ Answer\ Length \times WEIGHT\_COUNT) + (Semantic\ Supply\ Score \times WEIGHT\_SEMANTIC)$
+
+**Knowledge Gap Score**
+
+$Knowledge\_Gap\_Score = Average\_Demand\_Complexity - Average\_Supply\_Detail$
+
 
 ---
 
