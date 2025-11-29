@@ -35,7 +35,7 @@ Producers Direct should:
 
 Farmers' financial questions follow strong seasonal patterns:
 - Jan–Feb & April: spikes in startup capital, loan access, investment evaluation, affordability concerns — farmers preparing for planting.
-- July–August: largest spike in market price questions, driven by major harvest and selling season.
+- July–August: most significant spike in market price questions, driven by major harvest and selling season.
 - November: a smaller second peak tied to the short-rains harvest and end-of-year financial pressure.
 
 **Implications for Producers Direct:**
@@ -61,12 +61,29 @@ Market price questions dominate financial needs in both countries, but **Uganda 
 2. Since price discovery remains essential in both countries, any price-related improvements could generate cross-market impact and create immediate, large-scale value.
 3. Kenya’s pronounced demand for loans and startup capital suggests an opportunity for partnerships with lenders or lightweight credit-readiness tools.
 
+### Key Finding 4: Farmers use two distinct financial vocabularies: one signaling immediate hardship (“no money,” “things are expensive”), and another signaling opportunity through investment, profitability, and high-earning crop choices.
+
+Farmers frame financial questions in practical, outcome-driven language. Common expressions fall into these core categories:
+
+1. Affordability Problems: “too expensive,” “no money for inputs,” “cannot afford fertilizer.”
+2. Liquidity Requests: “help me with money,” “I need funds,” “lend me some money.”
+3. Startup & Investment Planning: “how much capital do I need to start poultry?”
+4. Profit Opportunity Seeking: “which crop brings quick money?,” “what business gives profit fast?”
+5. Price Intelligence: “how much is maize today?,” “how much is rice in Gulu?”
+6. Cost-Minimization: “cheapest method,” “what type of goat is the cheapest?”
+
+**Implications for Producers Direct:**
+1. Farmers’ financial concerns are focused on cash flow, affordability, and immediate next steps — tools should match this behavior. As mentioned throughout this analysis, Price discovery is an essential financial infrastructure, especially for Uganda. Improving price accuracy, frequency, and localization directly addresses the top pain.
+2. Financial challenge language (especially “no money”, “too expensive”) signals distress, which could be used to trigger nudges, alternative low-cost recommendations, or subsidy program information.
+3. Quick-money / profitability queries indicate high demand for guidance on viable crops, which could inform seasonal extension campaigns.
+4. Support requests reflect a belief that the platform can provide financial support—messaging and expectations need to be clarified if this is not the case.
 
 ## Next Steps 
 ### For Further Analysis
-1. **Recommendation 1**: What could be explored next
-2. **Recommendation 2**: How to deepen this analysis
-3. **Recommendation 3**: Related questions to investigate
+1. **Deepen crop-level analysis:** Identify which financial concerns (prices, loans, profitability) matter most for each major crop to inform targeted advisory content.
+2. **Add non-English data:** Integrate Luganda, Swahili, Runyankole, etc., to capture financial language patterns currently missing from the English-only sample.
+3. **Improve classification with ML:** Use embeddings or a lightweight supervised model to resolve edge cases (e.g., invest vs infest, interest, ambiguous “money” use).
+4. **Temporal validation:** Check whether seasonal patterns persist across multiple years or shift with weather anomalies.
 
 ## Limitations and Challenges
 
@@ -118,7 +135,7 @@ Market price questions dominate financial needs in both countries, but **Uganda 
     - Generating SQL CASE WHEN blocks and regex patterns.
     - Debugging SQL/regex errors and restructuring complex logic.
     - Creating aggregation query templates and cleaning functions.
-    - Providing statistical test outputs and helping phrase insight summaries.
+    - Providing statistical test outputs and helping phrase initial insight summaries for this report.
     - Exploratory thought partner on financial taxonomy and figuring out edge cases.
 
 - **Human-Created**
