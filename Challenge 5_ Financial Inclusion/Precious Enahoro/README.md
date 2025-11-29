@@ -30,6 +30,7 @@ Producers Direct should:
 3. Develop automated price-insight messages, e.g., price drops, best-selling locations, or price anomalies.
 4. Include price trend visualizations or weekly summaries to reduce repeated questions.
 
+
 ### Key Finding 2: Financial questions rise during major farming cash-flow cycles—before/during planting (April) and during harvest/selling periods (July–Aug, Nov)
 ![Key Finding 2](https://github.com/PreciousEnahoro/datakit-smallholder-farmers-fall-2025/blob/main/Challenge%205_%20Financial%20Inclusion/Precious%20Enahoro/key-finding-vizzes/Seasonal%20Trends%20in%20Farmer%20Financial%20Questions.png)
 
@@ -47,6 +48,7 @@ Farmers' financial questions follow strong seasonal patterns:
 
 2. Prioritize price-discovery features during harvest, since this dominates financial questions.
 
+
 ### Key Finding 3: Ugandan farmers prioritize price discovery, while Kenyan farmers additionally seek credit and startup capital before planting seasons.
 Ugandan farmers ask significantly more financial questions than Kenyan farmers, a difference confirmed by a chi-square test (p < 0.001).
 
@@ -61,16 +63,19 @@ Market price questions dominate financial needs in both countries, but **Uganda 
 2. Since price discovery remains essential in both countries, any price-related improvements could generate cross-market impact and create immediate, large-scale value.
 3. Kenya’s pronounced demand for loans and startup capital suggests an opportunity for partnerships with lenders or lightweight credit-readiness tools.
 
+
 ### Key Finding 4: Farmers use two distinct financial vocabularies: one signaling immediate hardship (“no money,” “things are expensive”), and another signaling opportunity through investment, profitability, and high-earning crop choices.
+
+![Key Finding 4](https://github.com/PreciousEnahoro/datakit-smallholder-farmers-fall-2025/blob/main/Challenge%205_%20Financial%20Inclusion/Precious%20Enahoro/key-finding-vizzes/Sankey%20Plot%20-%20Farmers%20Challenges%20and%20Opportunities.png)
 
 Farmers frame financial questions in practical, outcome-driven language. Common expressions fall into these core categories:
 
-1. Affordability Problems: “too expensive,” “no money for inputs,” “cannot afford fertilizer.”
-2. Liquidity Requests: “help me with money,” “I need funds,” “lend me some money.”
-3. Startup & Investment Planning: “how much capital do I need to start poultry?”
-4. Profit Opportunity Seeking: “which crop brings quick money?,” “what business gives profit fast?”
-5. Price Intelligence: “how much is maize today?,” “how much is rice in Gulu?”
-6. Cost-Minimization: “cheapest method,” “what type of goat is the cheapest?”
+1. **Affordability Problems:** “too expensive,” “no money for inputs,” “cannot afford fertilizer.”
+2. **Liquidity Requests:** “help me with money,” “I need funds,” “lend me some money.”
+3. **Startup & Investment Planning:** “how much capital do I need to start poultry?”
+4. **Profit Opportunity Seeking:** “which crop brings quick money?,” “what business gives profit fast?”
+5. **Price Intelligence:** “how much is maize today?,” “how much is rice in Gulu?”
+6. **Cost-Minimization:** “cheapest method,” “what type of goat is the cheapest?”
 
 **Implications for Producers Direct:**
 1. Farmers’ financial concerns are focused on cash flow, affordability, and immediate next steps — tools should match this behavior. As mentioned throughout this analysis, Price discovery is an essential financial infrastructure, especially for Uganda. Improving price accuracy, frequency, and localization directly addresses the top pain.
@@ -85,22 +90,16 @@ Farmers frame financial questions in practical, outcome-driven language. Common 
 3. **Improve classification with ML:** Use embeddings or a lightweight supervised model to resolve edge cases (e.g., invest vs infest, interest, ambiguous “money” use).
 4. **Temporal validation:** Check whether seasonal patterns persist across multiple years or shift with weather anomalies.
 
+
 ## Limitations and Challenges
 
-### Data Limitations
-- Missing data issues
-- Data quality concerns
-- Sample size or coverage limitations
+1. Manual category interpretation: Subcategory rules were refined by human judgment—useful but subjective and not perfectly reproducible.
+2. Non-English questions excluded: Large volumes in Luganda/Swahili were not analyzed, creating language bias.
+3. Early filtering by eye: Some data corrections were made through visual inspection, which may not scale or be consistently repeatable.
+4. Keyword-based classification: Regex logic can misclassify misspellings, slang, or nuanced intent (e.g., invest vs infest). The long regex patterns used for crop/financial term detection are brittle and require constant maintenance.
+5. Data quality noise: Duplicates, missing and incomplete fields, inconsistent formatting, and unstructured text increase classification uncertainty.
+6. No automated text-modeling: Without embeddings or machine learning, nuanced financial intent may be underestimated or mislabelled.
 
-### Methodological Limitations
-- Assumptions made
-- Simplifications required
-- Alternative approaches not explored
-
-### Technical Challenges
-- Computational constraints
-- Translation accuracy issues
-- Other technical hurdles
 
 ## Methodology
 ### Data Source
@@ -137,6 +136,7 @@ Farmers frame financial questions in practical, outcome-driven language. Common 
     - Creating aggregation query templates and cleaning functions.
     - Providing statistical test outputs and helping phrase initial insight summaries for this report.
     - Exploratory thought partner on financial taxonomy and figuring out edge cases.
+    - Code to create the Sankey diagram for Key Finding 4.
 
 - **Human-Created**
     - Designed the financial taxonomy and defined all category logic.
